@@ -1,0 +1,4 @@
+1. Alter the user table.
+2. Migrate the database.
+3. Make the create roles in database.
+4. 
