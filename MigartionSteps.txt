@@ -1,4 +1,4 @@
-1. Alter the user table.
+1. Alter the user table for adding user roles.
 2. Migrate the database.
 3. Make the create roles in database.
-4. 
+4. Assign role ids to the user.
