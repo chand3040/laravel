@@ -2,3 +2,9 @@
 2. Migrate the database.
 3. Make the create roles in database.
 4. Assign role ids to the user.
+
+Added Migrations for forgot password:-
+1. php artisan auth:reminders-table
+2. php artisan migrate
+Generate Password Reminder controller:-
+php artisan auth:reminders-controller

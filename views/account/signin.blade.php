@@ -13,7 +13,7 @@
         <!-- Login Title -->
         <div class="block-title">
             <div class="block-options pull-right">
-                <a href="page_ready_reminder.php" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="left" title="Forgot your password?"><i class="fa fa-exclamation-circle"></i></a>
+                <a href="{{ URL::route('password-reset') }}" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="left" title="Forgot your password?"><i class="fa fa-exclamation-circle"></i></a>
                 <a href="{{ URL::route('account-create') }}" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="left" title="Create new account"><i class="fa fa-plus"></i></a>
             </div>
             <h2>Please Login</h2>

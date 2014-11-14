@@ -30,4 +30,10 @@ Route::get('/account/sign-in', array('as' => 'account-sign-in','uses' => 'Accoun
 Route::get('/account/create', array('as' => 'account-create','uses' => 'AccountController@getCreate'));
 Route::get('/account/activate/{code}', array('as' => 'account-activate','uses' => 'AccountController@getActivate'));
 
+
+//password reminder
+Route::get('/reminders/password-reset', array('as' => 'password-reset','uses' => 'RemindersController@getRemind'));
+Route::post('/reminders/password-reset', array('uses' => 'RemindersController@postRemind'));
+Route::get('password/reset/{token}', 'RemindersController@getReset');
+Route::post('password/reset/{token}', 'RemindersController@postReset');
 });

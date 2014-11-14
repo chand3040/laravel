@@ -163,10 +163,7 @@ class AccountController extends BaseController {
 				'password' => 'required|min:6'
 
 				));
-		if($validator->fails())
-		{
-			//redirect
-
+		if($validator->fails()){
 			return Redirect::route('dashboard-profile')
 			->withErrors($validator);
 
